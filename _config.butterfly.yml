@@ -255,3 +255,19 @@ tag_page:
 category_page:
   enable: true
   title: '文章分类'
+
+# --------------------------------------
+# SEO / 站长平台验证
+# --------------------------------------
+# 申请百度站长平台：https://ziyuan.baidu.com/
+# 申请 Google Search Console：https://search.google.com/search-console/
+# 验证方式选「HTML 标签」最快，把验证 meta 粘贴到下面
+site_verification:
+  # - name: google-site-verification
+  #   content: xxxxxx
+  # - name: baidu-site-verification
+  #   content: xxxxxxx
+  # - name: msvalidate.01
+  #   content: xxxxxxx    # Bing 验证
+  # - name: sogou_site_verification
+  #   content: xxxxxxx     # 搜狗验证
