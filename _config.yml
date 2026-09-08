@@ -1,0 +1,179 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 高晓庄 札记
+subtitle: '工程师 / 架构师 / 偶尔读点哲学和经济学'
+description: '高晓庄的札记。技术思考、工程实践、人生哲学、经济学随笔、读书感悟。'
+keywords: '高晓庄, 札记, 个人博客, 技术博客, AI工程师, Java架构师, RAG, Agent, Cloud Native, 哲学, 经济学, 儒家, 道家'
+author: 高晓庄
+author_description: 'Java / Go / Python · AI / RAG / Agent · Cloud Native / Kubernetes'
+email: gaoxiaozhuang@bingosoft.net
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+url: https://xiaozhuanggao.github.io
+root: /
+permalink: :year/:month/:day/:abbrlink/
+abbrlink:
+  alg: crc32
+  rep: hex
+  perma: false
+permalink_defaults:
+pretty_urls:
+  trailing_index: true
+  trailing_html: true
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+  - 'downloads/**'
+
+# Writing
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: true
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+index_generator:
+  path: ''
+  per_page: 8
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+  AI: AI
+  Java: Java
+  Go: Go
+  'Cloud Native': Cloud-Native
+  Database: Database
+  Architecture: Architecture
+  Troubleshooting: Troubleshooting
+  LLM: LLM
+  RAG: RAG
+  Agent: Agent
+  LangChain: LangChain
+  Dify: Dify
+  'Fine-tuning': Fine-tuning
+  CV: CV
+  GIS: GIS
+  Performance: Performance
+  Microservices: Microservices
+  Concurrency: Concurrency
+  Gin: Gin
+  Virtualization: Virtualization
+  'System Design': System-Design
+  'Enterprise Architecture': Enterprise-Architecture
+  'Spring Boot': Spring-Boot
+  'Spring Cloud': Spring-Cloud
+  哲学: 哲学
+  人生哲学: 人生哲学
+  道家: 道家
+  儒家: 儒家
+  佛学: 佛学
+  经济学: 经济学
+  社会经济学: 社会经济学
+  随笔: 随笔
+  读书: 读书
+  MyBatis: MyBatis
+  JVM: JVM
+  Docker: Docker
+  Kubernetes: Kubernetes
+  K3s: K3s
+  Linux: Linux
+  MySQL: MySQL
+  PostgreSQL: PostgreSQL
+  Kingbase: Kingbase
+  PostGIS: PostGIS
+tag_map:
+
+# Metadata
+meta_generator: true
+
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+updated_option: 'mtime'
+
+# Pagination
+per_page: 8
+pagination_dir: page
+
+# Include / Exclude
+include:
+exclude:
+ignore:
+
+# Theme
+theme: butterfly
+
+# Deployment
+deploy:
+  type: ''
+
+# Search
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+# Feed (RSS)
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+
+# Sitemap
+sitemap:
+  path: sitemap.xml
+  rel: false
+
+# Markdown
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+  modifyAnchors: 1-6
+  autolink: true
+  headerIds: true
+  mangle: true

@@ -1,0 +1,257 @@
+# Butterfly Theme Configuration
+# Docs: https://butterfly.js.org/
+
+# Menu (navigation)
+menu:
+  首页: / || fas fa-home
+  简历: /resume/ || fas fa-file-alt
+  项目: /projects/ || fas fa-diagram-project
+  技术文章: /archives/ || fas fa-newspaper
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-user
+
+# Sub-menu (none for now)
+# submenus: {}
+
+# Social Links
+social:
+  fab fa-github: https://github.com/xiaozhuanggao || Github
+  fas fa-envelope: mailto:gaoxiaozhuang@bingosoft.net || Email
+
+# Avatar
+avatar:
+  img: /img/avatar.png
+  effect: false
+
+# Title (image style)
+title_img:
+  enable: false
+
+# Default cover
+default_top_img: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600
+default_cover: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600
+
+# Index / Home Page
+index_site_title_meta:
+  enable: true
+  text: '高晓庄 · 技术主页'
+
+# Error page
+error_404:
+  enable: false
+  src: /img/404.png
+
+# Beautify / Effects (keep minimal per spec)
+beautify:
+  enable: true
+  field: site
+  fade: true
+  shrink: false
+  offset: 120
+
+# Loading
+loading:
+  enable: true
+  color: '#0099ff'
+
+# Background effects (disabled per spec)
+background:
+  enable: false
+
+# Mouse effects (disabled per spec)
+mouse:
+  enable: false
+
+# Code Blocks
+code:
+  copy:
+    enable: true
+    style: mac
+  highlight_theme: light
+  hljs: highlight.js
+  line_number: true
+  default_lang: ''
+  wrap: true
+  height_limit: false
+  word_wrap: false
+
+# Font
+font:
+  enable: true
+  font-family: 'PingFang SC, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif'
+  code-font-family: 'Menlo, Monaco, Consolas, "Courier New", monospace'
+
+# Font size
+font_size:
+  root_size: 16px
+  code_size: 14px
+
+# Avatar and site meta
+site_meta:
+  enable: true
+  icon: 'fa-solid fa-globe'
+  search: 'fa-solid fa-magnifying-glass'
+  rss: 'fa-solid fa-rss'
+
+# Top img (post top image)
+top_img:
+  enable: true
+  default: https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1600
+
+# Post
+post_meta:
+  date_type: both
+  date_format: 'YYYY-MM-DD HH:mm'
+  categories: true
+  tags: true
+
+# wordcount (post word count)
+wordcount:
+  enable: true
+  to_one_page: false
+
+# toc (table of contents)
+toc:
+  enable: true
+  number: false
+  style_simple: false
+  scroll_percent: true
+
+# share
+share:
+  enable: false
+
+# reward (donate)
+reward:
+  enable: false
+
+# follow / sticky
+follow: false
+
+# dark mode
+darkmode:
+  enable: true
+  default: light
+  auto: false
+
+# aside (sidebar)
+aside:
+  enable: true
+  position: right
+  card_author:
+    enable: true
+    description: 'Java / Go / Python<br>AI / RAG / Agent<br>Cloud Native / Kubernetes'
+  card_announcement:
+    enable: false
+  card_recent_post:
+    enable: true
+    limit: 5
+  card_categories:
+    enable: true
+    limit: 8
+    expand: true
+  card_tags:
+    enable: true
+    limit: 40
+  card_archives:
+    enable: true
+    type: monthly
+    format: 'YYYY-MM'
+    limit: 8
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+  card_post_series:
+    enable: false
+
+# comment (disabled for static site)
+comments:
+  enable: false
+
+# footer
+footer:
+  enable: true
+  copyright: 'Copyright © 2026 高晓庄'
+  custom_text: ''
+  icon:
+    enable: true
+  since: 2016
+  count: true
+
+# aplayer (disabled)
+aplayer:
+  enable: false
+
+# busuanzi (访问量统计)
+busuanzi:
+  enable: true
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# Local search
+local_search:
+  enable: true
+  labels:
+    input_placeholder: 搜索文章
+    hits_empty: '未找到内容 :('
+    hits_stats: '找到 ${hits} 条结果，用时 ${time} 毫秒'
+
+# Mathjax
+mathjax:
+  enable: false
+
+# mermaid
+mermaid:
+  enable: false
+
+# Lightbox
+lightbox:
+  enable: true
+  options:
+    threshold: 0.1
+
+# Lazyload
+lazyload:
+  enable: true
+  field: site
+  placeholder: /img/lazyload.gif
+  error: /img/error.jpg
+  options:
+    threshold: 0
+    effect: fadeIn
+    debounce: 100
+
+# Snackbar
+snackbar:
+  enable: false
+
+# Tag plugins settings
+tag_plugins:
+  tag_fontawesome: true
+
+# Page specific settings
+# Homepage
+index_top_img_height: 60vh
+
+# post page
+post_top_img_height: 50vh
+post_page:
+  hide: false
+  meta_align: center
+
+# page
+page:
+  top_img_height: 50vh
+
+# tag page
+tag_page:
+  enable: true
+  title: '标签云'
+
+# category page
+category_page:
+  enable: true
+  title: '文章分类'
