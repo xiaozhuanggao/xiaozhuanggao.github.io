@@ -50,7 +50,7 @@ comment: false
   </div>
   <div class="timeline-item">
     <span class="timeline-item-time">09-01</span>
-    <a class="timeline-item-title" href="/2026/09/01/b11d89bb/" target="_self">不确定性是人生唯一确定的事——三十岁后我不再假装掌控一切</a>
+    <a class="timeline-item-title" href="/2026/09/01/332cb110/" target="_self">不确定性是人生唯一确定的事——我不再假装掌控一切</a>
     <a class="timeline-item-cat" href="/categories/哲学/" target="_self">哲学</a>
   </div>
   <div class="timeline-month"><span class="timeline-month-tag">8 月</span></div>
@@ -66,7 +66,7 @@ comment: false
   </div>
   <div class="timeline-item">
     <span class="timeline-item-time">08-28</span>
-    <a class="timeline-item-title" href="/2026/08/28/" target="_self">三十岁后我开始理解"放下"——一些不那么好听的真话</a>
+    <a class="timeline-item-title" href="/2026/08/28/" target="_self">这几年我开始理解"放下"——一些不那么好听的真话</a>
     <a class="timeline-item-cat" href="/categories/哲学/" target="_self">哲学</a>
   </div>
   <div class="timeline-item">
@@ -91,7 +91,7 @@ comment: false
   </div>
   <div class="timeline-item">
     <span class="timeline-item-time">08-20</span>
-    <a class="timeline-item-title" href="/2026/08/20/" target="_self">三十岁后重读"知行合一"——王阳明对我这十年的影响</a>
+    <a class="timeline-item-title" href="/2026/08/20/" target="_self">重读"知行合一"——王阳明对我这些年的影响</a>
     <a class="timeline-item-cat" href="/categories/哲学/" target="_self">哲学</a>
   </div>
   <div class="timeline-item">
