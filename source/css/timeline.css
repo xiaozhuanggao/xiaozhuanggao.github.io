@@ -170,6 +170,12 @@
   font-weight: 500;
   color: var(--text-color, #24292f);
   line-height: 1.5;
+  text-decoration: none;
+  transition: color .15s ease;
+}
+
+.timeline-item-title:hover {
+  color: var(--theme-color, #4361ee);
 }
 
 .timeline-item-cat {
