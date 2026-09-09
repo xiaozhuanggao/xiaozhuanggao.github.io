@@ -12,7 +12,7 @@ comment: false
 
 这张图把从 2026 年 1 月到现在的所有文章按天铺开。每个格子代表一天,颜色越深代表那天输出的文章越多。
 
-目前累计写了 **52** 篇文章,大概维持着 **5.8 篇/月** 的节奏——既不算高强度,也不是低产,更像是一种持续的、技术读书笔记式的输出。
+目前累计写了 **53** 篇文章,大概维持着 **5.9 篇/月** 的节奏——既不算高强度,也不是低产,更像是一种持续的、技术读书笔记式的输出。
 
 <div class="contribution-card">
   <p class="contrib-title">累计输出</p>
@@ -21,9 +21,9 @@ comment: false
     <img src="contribution.svg" alt="贡献热图">
   </div>
   <div class="contrib-stats">
-    <span><b>52</b> 篇总数</span>
+    <span><b>53</b> 篇总数</span>
     <span><b>9</b> 个月</span>
-    <span><b>5.8</b> 篇/月均</span>
+    <span><b>5.9</b> 篇/月均</span>
     <span><b>52</b> 天有输出</span>
   </div>
 </div>
@@ -31,7 +31,7 @@ comment: false
 ## 文章时间轴
 
 <div class="timeline">
-  <div class="timeline-year"><span class="timeline-year-tag">📅 2026</span><span class="timeline-year-stat">52 篇</span></div>
+  <div class="timeline-year"><span class="timeline-year-tag">📅 2026</span><span class="timeline-year-stat">53 篇</span></div>
   <div class="timeline-month"><span class="timeline-month-tag">9 月</span></div>
   <div class="timeline-item">
     <span class="timeline-item-time">09-10</span>
@@ -247,6 +247,11 @@ comment: false
     <span class="timeline-item-time">04-30</span>
     <span class="timeline-item-title">K3s NodePort 为什么只有一个节点能访问</span>
     <span class="timeline-item-cat">Troubleshooting</span>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">04-23</span>
+    <span class="timeline-item-title">做完 RAG 技术培训之后的一些想法</span>
+    <span class="timeline-item-cat">AI</span>
   </div>
   <div class="timeline-item">
     <span class="timeline-item-time">04-23</span>
