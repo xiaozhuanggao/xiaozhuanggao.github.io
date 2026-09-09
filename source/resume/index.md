@@ -9,6 +9,9 @@ comment: false
 
 <div class="resume">
 <header class="resume__header">
+<div class="resume__photo">
+<img src="/img/resume-photo.jpg" alt="高晓庄照片" loading="lazy">
+</div>
 <div class="resume__id">
 <h1 class="resume__name">高晓庄</h1>
 <p class="resume__tags">
@@ -220,12 +223,33 @@ font-size: 15px;
 .resume__header {
 display: flex;
 justify-content: space-between;
-align-items: flex-start;
-gap: 16px;
+align-items: center;
+gap: 20px;
 padding: 28px 32px;
 background: linear-gradient(135deg, #4361ee 0%, #6d5df0 55%, #9b5de5 100%);
 border-radius: 12px;
 color: #fff;
+}
+.resume__photo {
+flex-shrink: 0;
+width: 96px;
+height: 96px;
+border-radius: 50%;
+overflow: hidden;
+border: 3px solid rgba(255, 255, 255, 0.85);
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+background: #fff;
+}
+.resume__photo img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+.resume__id {
+display: flex;
+flex-direction: column;
+flex: 1;
 }
 .resume__name {
 margin: 0;
@@ -418,7 +442,16 @@ color: #374151;
 @media (max-width: 768px) {
 .resume__header {
 flex-direction: column;
+align-items: center;
 padding: 22px 20px;
+}
+.resume__photo {
+width: 84px;
+height: 84px;
+}
+.resume__id {
+align-items: center;
+text-align: center;
 }
 .resume__actions {
 flex-direction: row;

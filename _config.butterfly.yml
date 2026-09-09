@@ -271,3 +271,13 @@ site_verification:
   #   content: xxxxxxx    # Bing 验证
   # - name: sogou_site_verification
   #   content: xxxxxxx     # 搜狗验证
+
+# --------------------------------------
+# 图标 / 头像
+# --------------------------------------
+# favicon 由 Butterfly 自动引用 /img/favicon.png
+# 这里额外注入 apple-touch-icon（iPhone/iPad 主屏图标）和 .ico
+inject:
+  head:
+    - '<link rel="icon" href="/img/favicon.ico" sizes="any">'
+    - '<link rel="apple-touch-icon" href="/img/favicon-180.png">'
