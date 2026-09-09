@@ -12,7 +12,7 @@ comment: false
 
 这张图把从 2026 年 1 月到现在的所有文章按天铺开。每个格子代表一天,颜色越深代表那天输出的文章越多。
 
-目前累计写了 **53** 篇文章,大概维持着 **5.9 篇/月** 的节奏——既不算高强度,也不是低产,更像是一种持续的、技术读书笔记式的输出。
+目前累计写了 **72** 篇文章,大概维持着 **8.0 篇/月** 的节奏——既不算高强度,也不是低产,更像是一种持续的、技术读书笔记式的输出。
 
 <div class="contribution-card">
   <p class="contrib-title">累计输出</p>
@@ -21,17 +21,17 @@ comment: false
     <img src="contribution.svg" alt="贡献热图">
   </div>
   <div class="contrib-stats">
-    <span><b>53</b> 篇总数</span>
+    <span><b>72</b> 篇总数</span>
     <span><b>9</b> 个月</span>
-    <span><b>5.9</b> 篇/月均</span>
-    <span><b>52</b> 天有输出</span>
+    <span><b>8.0</b> 篇/月均</span>
+    <span><b>71</b> 天有输出</span>
   </div>
 </div>
 
 ## 文章时间轴
 
 <div class="timeline">
-  <div class="timeline-year"><span class="timeline-year-tag">📅 2026</span><span class="timeline-year-stat">53 篇</span></div>
+  <div class="timeline-year"><span class="timeline-year-tag">📅 2026</span><span class="timeline-year-stat">72 篇</span></div>
   <div class="timeline-month"><span class="timeline-month-tag">9 月</span></div>
   <div class="timeline-item">
     <span class="timeline-item-time">09-10</span>
@@ -281,25 +281,120 @@ comment: false
   </div>
   <div class="timeline-month"><span class="timeline-month-tag">2 月</span></div>
   <div class="timeline-item">
+    <span class="timeline-item-time">02-26</span>
+    <a class="timeline-item-title" href="/2026/02/26/a1df58c2/" target="_self">整洁代码与代码审查：写出别人愿意读的代码</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">02-22</span>
+    <a class="timeline-item-title" href="/2026/02/22/6c52f41/" target="_self">并发编程基础：线程、锁与内存可见性</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
     <span class="timeline-item-time">02-19</span>
     <a class="timeline-item-title" href="/2026/02/19/bc3de5af/" target="_self">企业级微服务基础平台设计</a>
     <a class="timeline-item-cat" href="/categories/Architecture/" target="_self">Architecture</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">02-16</span>
+    <a class="timeline-item-title" href="/2026/02/16/6c150c86/" target="_self">递归与回溯：从汉诺塔到全排列</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">02-13</span>
+    <a class="timeline-item-title" href="/2026/02/13/226756dc/" target="_self">二分查找：边界条件为什么总是写错</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">02-10</span>
+    <a class="timeline-item-title" href="/2026/02/10/375b8f24/" target="_self">排序算法：快排、归并、堆排，理解比背诵重要</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">02-07</span>
+    <a class="timeline-item-title" href="/2026/02/07/ceeb1abf/" target="_self">图与图的遍历：BFS、DFS 与拓扑排序</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
   </div>
   <div class="timeline-item">
     <span class="timeline-item-time">02-05</span>
     <a class="timeline-item-title" href="/2026/02/05/bd3bb594/" target="_self">Docker 从入门到生产实践</a>
     <a class="timeline-item-cat" href="/categories/Cloud/" target="_self">Cloud</a>
   </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">02-02</span>
+    <a class="timeline-item-title" href="/2026/02/02/805c219e/" target="_self">依赖注入：为什么你的代码不该自己 new 对象</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
   <div class="timeline-month"><span class="timeline-month-tag">1 月</span></div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">01-26</span>
+    <a class="timeline-item-title" href="/2026/01/26/59445745/" target="_self">单元测试与 TDD：先写测试再写代码，真的值得吗</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">01-24</span>
+    <a class="timeline-item-title" href="/2026/01/24/ed00b7b3/" target="_self">函数式编程范式：纯函数、不可变数据与高阶函数</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
   <div class="timeline-item">
     <span class="timeline-item-time">01-22</span>
     <a class="timeline-item-title" href="/2026/01/22/16b97a34/" target="_self">Spring Cloud 微服务架构演进</a>
     <a class="timeline-item-cat" href="/categories/Java/" target="_self">Java</a>
   </div>
   <div class="timeline-item">
+    <span class="timeline-item-time">01-21</span>
+    <a class="timeline-item-title" href="/2026/01/21/62901b12/" target="_self">SOLID 五大原则：面向对象设计的地基</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">01-19</span>
+    <a class="timeline-item-title" href="/2026/01/19/dc4a6e9b/" target="_self">时间复杂度与空间复杂度：Big-O 到底怎么算</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">01-17</span>
+    <a class="timeline-item-title" href="/2026/01/17/86c14e01/" target="_self">堆与优先队列：Top K 问题的标准答案</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">01-15</span>
+    <a class="timeline-item-title" href="/2026/01/15/c5b9c0a5/" target="_self">二叉树与二叉搜索树：递归遍历三板斧</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">01-13</span>
+    <a class="timeline-item-title" href="/2026/01/13/fafcfc2d/" target="_self">哈希表：为什么它能做到 O(1)</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">01-11</span>
+    <a class="timeline-item-title" href="/2026/01/11/13775fca/" target="_self">数组、链表、栈、队列：最基础也最容易被问倒</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">01-09</span>
+    <a class="timeline-item-title" href="/2026/01/09/d3ebe3f6/" target="_self">策略模式与观察者模式：从 if-else 地狱里爬出来</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
     <span class="timeline-item-time">01-08</span>
     <a class="timeline-item-title" href="/2026/01/08/5cb9ef4f/" target="_self">从单体架构迁移到微服务，我是怎么设计的</a>
     <a class="timeline-item-cat" href="/categories/Architecture/" target="_self">Architecture</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">01-07</span>
+    <a class="timeline-item-title" href="/2026/01/07/d8233f37/" target="_self">工厂方法与抽象工厂：别再混为一谈</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">01-05</span>
+    <a class="timeline-item-title" href="/2026/01/05/a7e2bcfb/" target="_self">单例模式：饿汉、懒汉、双重检查锁，到底怎么选</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-item-time">01-03</span>
+    <a class="timeline-item-title" href="/2026/01/03/1374915f/" target="_self">设计模式入门：为什么需要它，以及三大分类</a>
+    <a class="timeline-item-cat" href="/categories/基础/" target="_self">基础</a>
   </div>
   <div class="timeline-item">
     <span class="timeline-item-time">01-01</span>
