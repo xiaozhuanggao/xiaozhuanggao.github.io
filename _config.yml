@@ -36,6 +36,11 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
   - 'downloads/**'
+  - 'google*.html'
+  - 'baidu*.html'
+  - 'bing*.html'
+  - 'sogou*.html'
+  - 'yandex*.html'
 
 # Writing
 new_post_name: :title.md
