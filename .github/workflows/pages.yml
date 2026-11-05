@@ -16,8 +16,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  build-deploy-sync:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -42,34 +45,18 @@ jobs:
         with:
           path: ./public
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
 
-  sync-gitee:
-    needs: build
-    runs-on: ubuntu-latest
-    # Gitee 同步失败不阻断 GitHub Pages 部署；配好密钥后重跑此 job 即可生效
-    continue-on-error: true
-    steps:
-      - name: Download public artifact
-        uses: actions/download-pages-artifact@v3
-        with:
-          path: public
-
       - name: Push to Gitee (国内镜像)
+        # Gitee 同步失败不阻断 GitHub Pages 部署；配好密钥后重跑即生效
+        continue-on-error: true
         env:
           GITEE_SSH_KEY: ${{ secrets.GITEE_SSH_KEY }}
         run: |
           if [ -z "$GITEE_SSH_KEY" ]; then
-            echo "::warning::未配置 secrets.GITEE_SSH_KEY，跳过 Gitee 同步。请在仓库 Settings → Secrets 添加后重跑此 job。"
+            echo "::warning::未配置 secrets.GITEE_SSH_KEY，跳过 Gitee 同步。请在仓库 Settings → Secrets 添加后重跑。"
             exit 0
           fi
           mkdir -p ~/.ssh
