@@ -49,10 +49,30 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Push new URLs to Baidu (百度主动推送)
+      - name: Download Baidu push state
+        uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: baidu-push-state
+          path: .baidu-state
+
+      - name: Push to Baidu (轮转扫描旧文 + 新文, 百度主动推送)
         if: ${{ secrets.BAIDU_PUSH_TOKEN != '' }}
         continue-on-error: true
+        env:
+          BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
         run: |
-          python3 scripts/baidu_push.py
-          curl -sS -H 'Content-Type:text/plain' --data-binary @baidu_urls.txt \
-            "http://data.zz.baidu.com/urls?site=https://gaoxiaozhuang.me&token=${{ secrets.BAIDU_PUSH_TOKEN }}"
+          python3 scripts/baidu_push.py \
+            --sitemap public/sitemap.xml \
+            --state .baidu-state/state.json \
+            --site https://gaoxiaozhuang.me \
+            --token "$BAIDU_PUSH_TOKEN" \
+            --quota 10
+
+      - name: Upload Baidu push state
+        if: ${{ secrets.BAIDU_PUSH_TOKEN != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: baidu-push-state
+          path: .baidu-state/state.json
+          retention-days: 90
