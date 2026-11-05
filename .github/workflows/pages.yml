@@ -48,3 +48,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Push new URLs to Baidu (百度主动推送)
+        if: ${{ secrets.BAIDU_PUSH_TOKEN != '' }}
+        continue-on-error: true
+        run: |
+          python3 scripts/baidu_push.py
+          curl -sS -H 'Content-Type:text/plain' --data-binary @baidu_urls.txt \
+            "http://data.zz.baidu.com/urls?site=https://gaoxiaozhuang.me&token=${{ secrets.BAIDU_PUSH_TOKEN }}"
