@@ -64,6 +64,7 @@ jobs:
           printf '%s\n' "$GITEE_SSH_KEY" > ~/.ssh/id_gitee
           chmod 600 ~/.ssh/id_gitee
           ssh-keyscan -t rsa,ed25519 gitee.com >> ~/.ssh/known_hosts 2>/dev/null
+          export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_gitee -o IdentitiesOnly=yes -o StrictHostKeyChecking=no"
           cd public
           git init -q -b master
           git config user.name "github-actions[bot]"
