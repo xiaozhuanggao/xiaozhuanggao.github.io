@@ -60,7 +60,7 @@ jobs:
     continue-on-error: true
     steps:
       - name: Download public artifact
-        uses: actions/download-pages-artifact@v4
+        uses: actions/download-pages-artifact@v3
         with:
           path: public
 
