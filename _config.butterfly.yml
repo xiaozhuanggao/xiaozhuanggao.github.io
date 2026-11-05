@@ -282,3 +282,4 @@ inject:
     - '<link rel="icon" href="/img/favicon.ico" sizes="any">'
     - '<link rel="apple-touch-icon" href="/img/favicon-180.png">'
     - '<link rel="stylesheet" href="/css/timeline.css">'
+    - '<meta name="baidu-site-verification" content="codeva-mZwjKolcAb" />'
