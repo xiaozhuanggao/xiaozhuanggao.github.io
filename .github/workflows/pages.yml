@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-deploy-sync:
+  build-deploy:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -48,28 +48,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: Push to Gitee (国内镜像)
-        # Gitee 同步失败不阻断 GitHub Pages 部署；配好密钥后重跑即生效
-        continue-on-error: true
-        env:
-          GITEE_SSH_KEY: ${{ secrets.GITEE_SSH_KEY }}
-        run: |
-          if [ -z "$GITEE_SSH_KEY" ]; then
-            echo "::warning::未配置 secrets.GITEE_SSH_KEY，跳过 Gitee 同步。请在仓库 Settings → Secrets 添加后重跑。"
-            exit 0
-          fi
-          mkdir -p ~/.ssh
-          chmod 700 ~/.ssh
-          printf '%s\n' "$GITEE_SSH_KEY" > ~/.ssh/id_gitee
-          chmod 600 ~/.ssh/id_gitee
-          ssh-keyscan -t rsa,ed25519 gitee.com >> ~/.ssh/known_hosts 2>/dev/null
-          export GIT_SSH_COMMAND="ssh -i ~/.ssh/id_gitee -o IdentitiesOnly=yes -o StrictHostKeyChecking=no"
-          cd public
-          git init -q -b master
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -q -m "sync: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git remote add gitee git@gitee.com:gaoxiaozhuang/gaoxiaozhuang.git
-          git push -f gitee master

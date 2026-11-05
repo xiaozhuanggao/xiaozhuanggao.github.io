@@ -14,7 +14,7 @@ language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
-url: https://xiaozhuanggao.github.io
+url: https://gaoxiaozhuang.me
 root: /
 permalink: :year/:month/:day/:abbrlink/
 abbrlink:
