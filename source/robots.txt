@@ -1,4 +1,4 @@
-# robots.txt for https://xiaozhuanggao.github.io/
+# robots.txt for https://gaoxiaozhuang.me/
 # 高晓庄 札记
 
 User-agent: *
@@ -7,7 +7,7 @@ Disallow: /admin/
 Disallow: /private/
 
 # Sitemap 位置（搜索引擎第一时间抓这里）
-Sitemap: https://xiaozhuanggao.github.io/sitemap.xml
+Sitemap: https://gaoxiaozhuang.me/sitemap.xml
 
 # 抓取延迟建议（GitHub Pages 友好）
 Crawl-delay: 1
